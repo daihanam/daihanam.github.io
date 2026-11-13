@@ -17,7 +17,7 @@ window.QSV = {
   video: [
     { tieuDe: "Giới thiệu nhanh: một công ty hồ sơ chạy cùng trợ lý AI",
       moTa: "Toàn cảnh hệ thống trong vài phút: thư mục, phòng ban, bảng điều hành, ba lần duyệt.",
-      youtube: "", mo: true },
+      youtube: "p4GKPvEnFL0", mo: true },
     { tieuDe: "Từ hợp đồng đến danh mục hồ sơ phải trình",
       moTa: "Cách đọc hợp đồng, rút ra yêu cầu và lập danh mục để không sót hồ sơ.",
       youtube: "", mo: false },

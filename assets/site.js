@@ -100,6 +100,9 @@
       nhan.className = "badge" + (v.mo ? " free" : "");
       nhan.textContent = !v.youtube ? "Đang quay" : (v.mo ? "Xem tự do" : (biKhoa ? "Đăng ký để xem" : "Đã mở"));
       nut.innerHTML = biKhoa ? KHOA : PLAY;
+      if (v.youtube && !biKhoa) {
+        nut.style.background = "linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)), url(https://i.ytimg.com/vi/" + encodeURIComponent(v.youtube) + "/hqdefault.jpg) center/cover";
+      }
       nut.appendChild(nhan);
       nut.setAttribute("aria-label", (biKhoa ? "Đăng ký để xem: " : "Xem video: ") + v.tieuDe);
       nut.addEventListener("click", function () {
