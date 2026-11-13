@@ -179,6 +179,13 @@ section{padding:64px 0}
 .preview-note{background:var(--gold-soft);border:1px solid #EBD9A8;border-radius:10px;padding:10px 12px;font-size:13.5px;color:var(--gold);text-align:left}
 .fail{display:none;background:var(--seal-soft);border:1px solid var(--seal);border-radius:10px;padding:10px 12px;font-size:14px;color:var(--seal)}
 
+.ma-box{display:flex;flex-direction:column;align-items:center;gap:8px;background:var(--green-soft);border:1.5px dashed var(--green);border-radius:14px;padding:16px 20px;width:100%}
+.ma-nhan{font-size:13.5px;color:var(--green);font-weight:600}
+.ma-so{font:700 30px/1.1 var(--f-body);letter-spacing:.08em;color:var(--green)}
+.form .ma-box .btn{width:auto}
+[hidden]{display:none!important}
+.ma-buoc{text-align:left;margin:0;padding-left:22px;font-size:15px;display:flex;flex-direction:column;gap:6px;width:100%}
+
 /* Chân trang */
 footer{background:#2A2119;color:#D9CDBD;padding:40px 0 96px;font-size:15px}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}

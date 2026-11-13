@@ -73,9 +73,11 @@
   document.querySelectorAll("[data-zalo]").forEach(function (a) { a.href = "https://zalo.me/" + so; });
   document.querySelectorAll("[data-goi]").forEach(function (a) { a.href = "tel:" + so; });
   document.querySelectorAll("[data-so]").forEach(function (e) { e.textContent = soDep; });
-  document.querySelectorAll("[data-nhom]").forEach(function (a) {
-    if (C.nhomZalo) { a.href = C.nhomZalo; a.hidden = false; } else { a.hidden = true; }
+  document.querySelectorAll("[data-ten-bot]").forEach(function (e) { if (C.tenBot) e.textContent = C.tenBot; });
+  document.querySelectorAll("[data-bot]").forEach(function (a) {
+    if (C.botZalo) { a.href = C.botZalo; a.hidden = false; } else { a.hidden = true; }
   });
+  var goiY = document.getElementById("goi-y-tim"); if (goiY && C.botZalo) goiY.hidden = true;
   document.querySelectorAll("[data-nam]").forEach(function (e) { e.textContent = new Date().getFullYear(); });
 
   /* ---------- Video ---------- */
@@ -139,9 +141,12 @@
     return s;
   }
   function danhDau(o, sai) { o.closest(".field").classList.toggle("bad", sai); o.setAttribute("aria-invalid", sai ? "true" : "false"); }
-  function xong(xemThu) {
+  function xong(xemThu, ma) {
     form.classList.add("xong");
     document.getElementById("ghi-chu-xem-thu").hidden = !xemThu;
+    ma = ma || (xemThu ? "QSV00000" : "");
+    if (ma) { dat("qsv_ma_xn", ma); } else { ma = lay("qsv_ma_xn") || "—"; }
+    document.getElementById("ma-xac-nhan").textContent = ma;
     dat("qsv_da_dang_ky", "1"); daDangKy = true; veVideo();
     form.scrollIntoView({ behavior: "smooth", block: "center" });
   }
@@ -167,11 +172,17 @@
     };
     nutGui.disabled = true; var chu = nutGui.textContent; nutGui.textContent = "Đang gửi…";
     gui(duLieu).then(function (kq) {
-      if (kq && kq.ok) { xong(!!kq.xemThu); }
+      if (kq && kq.ok) { xong(!!kq.xemThu, kq.ma); }
       else { throw new Error("loi"); }
     }).catch(function () {
       hopLoi.style.display = "block";
     }).then(function () { nutGui.disabled = false; nutGui.textContent = chu; });
+  });
+  var nutChep = document.getElementById("chep-ma");
+  nutChep.addEventListener("click", function () {
+    var ma = document.getElementById("ma-xac-nhan").textContent;
+    function daChep() { nutChep.textContent = "Đã chép"; setTimeout(function () { nutChep.textContent = "Chép mã"; }, 1500); }
+    try { navigator.clipboard.writeText(ma).then(daChep, function () {}); } catch (e) {}
   });
   [oTen, oSo].forEach(function (o) { o.addEventListener("input", function () { danhDau(o, false); }); });
 })();

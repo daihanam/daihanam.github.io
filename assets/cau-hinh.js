@@ -6,8 +6,10 @@ window.QSV = {
   /* Số Zalo / điện thoại hiển thị trên trang */
   zalo: "0915468176",
 
-  /* Link mời nhóm Zalo (khi đã lập nhóm). Để trống = chỉ hiện nút nhắn Zalo cá nhân. */
-  nhomZalo: "https://zalo.me/g/zkiuv49lovcukdunk9bz",
+  /* Bot Zalo xác nhận người đăng ký và gửi link nhóm (link nhóm KHÔNG để ở đây, bot giữ).
+     botZalo: đường dẫn mở chat với bot. Để trống = chỉ hướng dẫn tìm tên bot trên Zalo. */
+  tenBot: "Bot AI-Đại QSV",
+  botZalo: "",
 
   /* Danh sách video.
      youtube: mã video YouTube (phần sau "v=" trong link). Để trống = hiện "Đang quay".
