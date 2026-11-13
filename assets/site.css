@@ -68,6 +68,10 @@ section{padding:64px 0}
 .story .q{font:600 72px/0.8 var(--f-head);color:var(--accent)}
 .story .txt{display:flex;flex-direction:column;gap:14px;font-size:17px;max-width:66ch}
 .story .sign{font:italic 600 18px var(--f-head);color:var(--accent-dark)}
+.story{grid-template-columns:auto 1fr 260px;align-items:center}
+.story .q{align-self:start}
+.story-anh{margin:0;border-radius:12px;overflow:hidden;border:5px solid #fff;box-shadow:0 10px 26px rgba(60,40,20,.14);transform:rotate(1.5deg)}
+.story-anh img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
 
 /* Thẻ */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -226,6 +230,7 @@ footer a{color:#fff}
   section{padding:48px 0}
   .hero{padding:32px 0 48px}
   .story{grid-template-columns:1fr;padding:24px;gap:6px}
+  .story-anh{order:-1;width:min(260px,80%);justify-self:center;margin-bottom:14px;transform:none}
   .story .q{font-size:54px}
   .dock{display:flex}
 }
