@@ -9,7 +9,7 @@ window.QSV = {
   /* Bot Zalo xác nhận người đăng ký và gửi link nhóm (link nhóm KHÔNG để ở đây, bot giữ).
      botZalo: đường dẫn mở chat với bot. Để trống = chỉ hướng dẫn tìm tên bot trên Zalo. */
   tenBot: "Bot AI-Đại QSV",
-  botZalo: "",
+  botZalo: "https://zalo.me/3059457514407082227",
 
   /* Danh sách video.
      youtube: mã video YouTube (phần sau "v=" trong link). Để trống = hiện "Đang quay".
