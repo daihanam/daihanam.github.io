@@ -139,6 +139,15 @@ section{padding:64px 0}
 .vid h3{font-size:17px}
 .vid-note{margin-top:18px;font-size:15px;color:var(--muted)}
 
+.mo-video{margin-top:22px;background:var(--paper);border:1.5px solid var(--green);border-radius:var(--r);padding:22px 24px;display:flex;flex-direction:column;gap:14px;max-width:720px}
+.mo-video h3{font-size:20px}
+.mo-video p{color:var(--muted);font-size:15.5px}
+.mo-video .ma{font:700 24px var(--f-body);letter-spacing:.06em;color:var(--green)}
+.mo-video .hang{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.mo-video input{font:16px var(--f-body);padding:10px 14px;border:1.5px solid var(--line);border-radius:10px;width:170px;text-transform:uppercase}
+.mo-video .tb{font-size:14.5px;font-weight:600}
+.mo-video .tb.loi{color:var(--seal)} .mo-video .tb.ok{color:var(--green)}
+
 /* Bài viết */
 .posts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .post{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--ink);transition:transform .15s, box-shadow .15s}

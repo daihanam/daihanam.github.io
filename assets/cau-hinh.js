@@ -13,7 +13,9 @@ window.QSV = {
 
   /* Danh sách video.
      youtube: mã video YouTube (phần sau "v=" trong link). Để trống = hiện "Đang quay".
-     mo: true = ai cũng xem được; false = phải để lại thông tin mới xem. */
+     mo: true = ai cũng xem được; false = phải đăng ký VÀ xác nhận qua bot Zalo mới xem.
+     Video khóa đã có: để youtube trống, ghi ma + daCo: true; mã YouTube thật lưu ở thuộc tính
+     VIDEO_KHOA của bảng tính (dạng {"ma": "mã YouTube"}), chỉ trả về cho người đã xác nhận. */
   video: [
     { tieuDe: "Giới thiệu nhanh: một công ty hồ sơ chạy cùng trợ lý AI",
       moTa: "Toàn cảnh hệ thống trong vài phút: thư mục, phòng ban, bảng điều hành, ba lần duyệt.",
@@ -23,10 +25,10 @@ window.QSV = {
       youtube: "p4GKPvEnFL0", mo: true },
     { tieuDe: "Hệ thống AI: 9 phòng ban, 1 người duyệt",
       moTa: "Chín phòng ban là trợ lý AI chia nhau làm hồ sơ, Giám đốc giữ quyền duyệt.",
-      youtube: "-2XfpK40AcQ", mo: true },
+      ma: "9-phong-ban", daCo: true, mo: false },
     { tieuDe: "Giải mã bản đồ tổng thể",
       moTa: "Đọc bản đồ tổng thể của hệ thống: từng phần nằm ở đâu và nối với nhau thế nào.",
-      youtube: "WC0-8cCo2Zk", mo: true },
+      ma: "ban-do", daCo: true, mo: false },
     { tieuDe: "Từ hợp đồng đến danh mục hồ sơ phải trình",
       moTa: "Cách đọc hợp đồng, rút ra yêu cầu và lập danh mục để không sót hồ sơ.",
       youtube: "", mo: false },
