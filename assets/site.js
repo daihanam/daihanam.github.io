@@ -178,6 +178,13 @@
       hopLoi.style.display = "block";
     }).then(function () { nutGui.disabled = false; nutGui.textContent = chu; });
   });
+  /* Bấm "Tham gia nhóm": chép sẵn mã rồi để Zalo mở bot */
+  document.querySelectorAll("[data-bot]").forEach(function (a) {
+    a.addEventListener("click", function () {
+      var ma = document.getElementById("ma-xac-nhan").textContent;
+      if (/^QSV\d{5}$/.test(ma)) { try { navigator.clipboard.writeText(ma).catch(function () {}); } catch (e) {} }
+    });
+  });
   var nutChep = document.getElementById("chep-ma");
   nutChep.addEventListener("click", function () {
     var ma = document.getElementById("ma-xac-nhan").textContent;
