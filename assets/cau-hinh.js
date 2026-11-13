@@ -17,7 +17,7 @@ window.QSV = {
   video: [
     { tieuDe: "Giới thiệu nhanh: một công ty hồ sơ chạy cùng trợ lý AI",
       moTa: "Toàn cảnh hệ thống trong vài phút: thư mục, phòng ban, bảng điều hành, ba lần duyệt.",
-      youtube: "p4GKPvEnFL0", mo: true },
+      youtube: "YcK50g8pk40", mo: true },
     { tieuDe: "Hệ thống AI: 9 phòng ban, 1 người duyệt",
       moTa: "Chín phòng ban là trợ lý AI chia nhau làm hồ sơ, Giám đốc giữ quyền duyệt.",
       youtube: "-2XfpK40AcQ", mo: true },
