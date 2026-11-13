@@ -147,6 +147,11 @@ section{padding:64px 0}
 .post p{color:var(--muted);font-size:15px}
 .post .more{margin-top:auto;font-weight:600;color:var(--accent-dark);font-size:15px}
 
+.bv-dau{display:grid;grid-template-columns:1fr 340px;gap:32px;align-items:end;margin-bottom:32px}
+.bv-dau .sec-head{margin-bottom:0}
+.bv-anh{margin:0;border-radius:12px;overflow:hidden;border:5px solid #fff;box-shadow:0 10px 26px rgba(60,40,20,.14);transform:rotate(-1.5deg)}
+.bv-anh img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+
 /* Đăng ký */
 .signup{background:var(--green);color:#fff}
 .signup .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
@@ -230,6 +235,8 @@ footer a{color:#fff}
   section{padding:48px 0}
   .hero{padding:32px 0 48px}
   .story{grid-template-columns:1fr;padding:24px;gap:6px}
+  .bv-dau{grid-template-columns:1fr;gap:18px}
+  .bv-anh{transform:none}
   .story-anh{order:-1;width:min(260px,80%);justify-self:center;margin-bottom:14px;transform:none}
   .story .q{font-size:54px}
   .dock{display:flex}
