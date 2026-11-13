@@ -219,6 +219,8 @@ footer a{color:#fff}
 .article th{font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
 .article tr:last-child td{border-bottom:0}
 .article .back{font-size:15px;text-decoration:none;font-weight:600}
+.bai-anh{margin:8px auto;width:min(340px,100%);border-radius:14px;overflow:hidden;border:5px solid #fff;box-shadow:0 10px 26px rgba(60,40,20,.14)}
+.bai-anh img{width:100%;height:auto}
 .article-cta{background:var(--green);color:#fff;border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:12px;align-items:flex-start;margin-top:20px}
 .article-cta h2{color:#fff;margin:0;font-size:24px}
 .article-cta p{color:#D5E6E2;font-size:16px}
