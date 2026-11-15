@@ -31,15 +31,15 @@ window.QSV = {
       ma: "ban-do", daCo: true, mo: false },
     { tieuDe: "Từ hợp đồng đến danh mục hồ sơ phải trình",
       moTa: "Cách đọc hợp đồng, rút ra yêu cầu và lập danh mục để không sót hồ sơ.",
-      youtube: "", mo: false },
+      youtube: "2KeBglvp5LE", mo: true },
     { tieuDe: "Sáu công tác pháp lý chạy song song",
       moTa: "Biện pháp – tiến độ, phòng thí nghiệm, nhân sự, máy móc, mỏ vật liệu, nhà cung cấp.",
-      youtube: "", mo: false },
+      youtube: "AJTakcK1ek0", mo: true },
     { tieuDe: "Một đợt thanh toán từ tiếp nhận đến bàn giao",
       moTa: "Ba phòng soạn cùng lúc, kiểm soát nội bộ đối chiếu chéo, Giám đốc duyệt một bảng.",
-      youtube: "", mo: false },
+      youtube: "dMM68weEwqs", mo: true },
     { tieuDe: "Tự dựng bảng điều hành cho công ty mình",
       moTa: "Dành cho người muốn làm lại hệ thống này: bắt đầu từ đâu, cần chuẩn bị gì.",
-      youtube: "", mo: false }
+      youtube: "TGy0-ekbvd4", mo: true }
   ]
 };
