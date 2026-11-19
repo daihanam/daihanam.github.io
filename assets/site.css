@@ -137,6 +137,13 @@ section{padding:64px 0}
 .vid .info{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px}
 .vid .info p{font-size:14.5px;color:var(--muted)}
 .vid h3{font-size:17px}
+.vid.noi-bat{grid-column:1/-1;flex-direction:row;border:1.5px solid var(--green)}
+.vid.noi-bat .thumb{flex:0 0 62%}
+.vid.noi-bat .info{justify-content:center;gap:10px;padding:26px 30px}
+.vid.noi-bat h3{font-size:24px;line-height:1.25}
+.vid.noi-bat .info p{font-size:16px}
+.vid.noi-bat .nb{align-self:flex-start;font-size:13px;font-weight:700;padding:4px 12px;border-radius:999px;background:var(--green-soft);color:var(--green)}
+.vid.noi-bat .btn{align-self:flex-start;margin-top:6px}
 .vid-note{margin-top:18px;font-size:15px;color:var(--muted)}
 
 .mo-video{margin-top:22px;background:var(--paper);border:1.5px solid var(--green);border-radius:var(--r);padding:22px 24px;display:flex;flex-direction:column;gap:14px;max-width:720px}
@@ -240,6 +247,7 @@ footer a{color:#fff}
   .photo{order:-1;width:min(220px,62%)}
   .photo .tag{left:-10px;bottom:14px;padding:8px 12px;font-size:13px}
   .cards,.steps,.vids,.posts,.flow,.shots{grid-template-columns:1fr}
+  .vid.noi-bat{flex-direction:column}.vid.noi-bat .thumb{flex:none}.vid.noi-bat .info{padding:18px 18px 20px}.vid.noi-bat h3{font-size:20px}
   .signup .wrap{grid-template-columns:1fr;gap:28px}
   .rules ul{grid-template-columns:1fr}
   .nav a.l{display:none}

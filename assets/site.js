@@ -96,7 +96,7 @@
       var coVideo = !!(v.youtube || v.daCo);
       var biKhoa = !v.mo && !id;
       var the = document.createElement("article");
-      the.className = "vid" + (biKhoa ? " khoa" : "");
+      the.className = "vid" + (biKhoa ? " khoa" : "") + (v.noiBat ? " noi-bat" : "");
 
       var nut = document.createElement("button");
       nut.type = "button"; nut.className = "thumb";
@@ -121,9 +121,15 @@
       });
 
       var tt = document.createElement("div"); tt.className = "info";
+      if (v.noiBat) { var nb = document.createElement("span"); nb.className = "nb"; nb.textContent = "Nên xem trước" + (v.thoiLuong ? " · " + v.thoiLuong : ""); tt.appendChild(nb); }
       var h = document.createElement("h3"); h.textContent = v.tieuDe;
       var p = document.createElement("p"); p.textContent = v.moTa || "";
       tt.appendChild(h); tt.appendChild(p);
+      if (v.noiBat && id) {
+        var xem = document.createElement("button"); xem.type = "button"; xem.className = "btn btn-main btn-sm"; xem.textContent = "Xem video";
+        xem.addEventListener("click", function () { nut.click(); });
+        tt.appendChild(xem);
+      }
       the.appendChild(nut); the.appendChild(tt);
       khung.appendChild(the);
     });

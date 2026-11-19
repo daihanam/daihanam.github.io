@@ -17,6 +17,10 @@ window.QSV = {
      Video khóa đã có: để youtube trống, ghi ma + daCo: true; mã YouTube thật lưu ở thuộc tính
      VIDEO_KHOA của bảng tính (dạng {"ma": "mã YouTube"}), chỉ trả về cho người đã xác nhận. */
   video: [
+    /* noiBat: true = video lớn, nằm đầu mục Video (chỉ đặt cho một video). thoiLuong: hiện cạnh tiêu đề. */
+    { tieuDe: "Bảng điều khiển cho doanh nghiệp AI",
+      moTa: "Không cần biết lập trình: bốn bước dựng bảng điều khiển, và bốn câu hỏi bảng trả lời ngay: việc đang ở đâu, đang chờ ai, còn thiếu gì, việc nào chờ Giám đốc quyết.",
+      youtube: "5t6rrrGBjLA", mo: true, noiBat: true, thoiLuong: "7 phút" },
     { tieuDe: "Giới thiệu nhanh: một công ty hồ sơ chạy cùng trợ lý AI",
       moTa: "Toàn cảnh hệ thống trong vài phút: thư mục, phòng ban, bảng điều hành, ba lần duyệt.",
       youtube: "YcK50g8pk40", mo: true },
