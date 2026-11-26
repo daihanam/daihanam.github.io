@@ -1,4 +1,4 @@
-const CACHE = "nhat-ky-v2";
+const CACHE = "nhat-ky-v3";
 const FILES = ["./", "./index.html", "./config.js", "./app.js", "./supabase.js", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./icon-maskable.png", "./apple-touch-icon.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES))); self.skipWaiting(); });
 self.addEventListener("activate", e => {
