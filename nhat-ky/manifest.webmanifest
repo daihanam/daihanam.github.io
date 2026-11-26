@@ -1,0 +1,16 @@
+{
+  "name": "Sổ nhật ký tối",
+  "short_name": "Nhật ký tối",
+  "description": "Mỗi tối 5 phút: việc quan trọng, bài học, biết ơn, tự hào và ý tưởng.",
+  "lang": "vi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F2F4F9",
+  "theme_color": "#232858",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icon-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
